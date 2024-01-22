@@ -2,7 +2,7 @@
 
 ## Unveiling the Dynamics of Precision and Recall
 
-Welcome to the Metrics Explorer – an interactive Shiny app designed to demystify the world of precision and recall for business stakeholders.
+Welcome to the Metrics Explorer – an interactive Shiny app designed to demystify the world of precision and recall for business stakeholders. Explore it [here.](https://tiger-tang.shinyapps.io/MetricsExplorer/)
 
 ![](www/overall_app.png)
 
