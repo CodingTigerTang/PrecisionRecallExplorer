@@ -10,7 +10,7 @@ ui <- dashboardPage(
                                                            ))),
   dashboardSidebar(
     numericInput("total_sample", "Total Sample", 10000, min = 10000),
-    sliderInput("prop_actual_positives", "Proportion of Actual Positives", 0.5, min = 0, max = 1, step = 0.01),
+    sliderInput("prop_actual_positives", "Proportion of Actual Positives %", 50, min = 1, max = 100, step = 1, post = "%"),
     numericInput("precision", "Precision", 0.01, min = 0.01, max = 1, step = 0.01),
     numericInput("recall", "Recall", 0.01, min = 0.01, max = 1, step = 0.01),
     textInput("use_case", "Use Case", "loan default")
@@ -51,7 +51,7 @@ server <- function(input, output) {
   # Reactive values to store user inputs
   values <- reactiveValues(
     total_sample = 100,
-    prop_actual_positives = 0.5,
+    prop_actual_positives = 50,
     precision = 0.01,
     recall = 0.01,
     use_case = "loan default prediction"
@@ -60,7 +60,7 @@ server <- function(input, output) {
   # Update reactive values based on user inputs
   observe({
     values$total_sample <- input$total_sample
-    values$prop_actual_positives <- input$prop_actual_positives
+    values$prop_actual_positives <- input$prop_actual_positives/100
     values$precision <- input$precision
     values$recall <- input$recall
     values$use_case <- input$use_case
