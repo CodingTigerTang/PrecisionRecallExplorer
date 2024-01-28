@@ -1,6 +1,8 @@
 library(shiny)
 library(shinydashboard)
 library(DT)
+options(scipen=999)
+
 
 ui <- dashboardPage(
   dashboardHeader(title = "Metrics Explorer", dropdownMenu(type = "messages",
@@ -72,7 +74,7 @@ server <- function(input, output) {
     fn <- values$prop_actual_positives * values$total_sample - tp
     fp <- tp/values$precision - tp
     tn <- (1-values$prop_actual_positives) * values$total_sample - fp
-    print(c(tp,fn,fp,tn))
+    # print(c(tp,fn,fp,tn))
     
     
     if (tp < 0 | fp < 0 | fn < 0 | tn < 0)  {
