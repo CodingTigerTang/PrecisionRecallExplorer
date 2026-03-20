@@ -1,4 +1,7 @@
-# Metrics Explorer for Business Decisions
+# 📊 Precision-Recall Explorer for Business
+
+[![Shiny App](https://img.shields.io/badge/Launch-App-success?style=flat-square&logo=shiny)](https://tiger-tang.shinyapps.io/MetricsExplorer/)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Unveiling the Dynamics of Precision and Recall
 
@@ -38,16 +41,17 @@ Welcome to the Metrics Explorer – an interactive Shiny app designed to demysti
 
 2. **Run Locally:**
    - Open the Shiny app in RStudio or your preferred environment.
-
+   
 3. **Interact and Learn:**
    - Adjust the sliders for total sample, proportion of actual positives, precision, and recall.
    - Witness how changes impact the confusion matrix and key performance metrics.
 
 ### Why Metrics Explorer?
 
-- **Business-Friendly:** No need to be a data scientist. This tool speaks the language of business.
-- **Real-World Insights:** See how model metrics translate into tangible business scenarios.
-- **Decision Support:** Empower decision-makers by visualizing the trade-offs between false alarms and missed opportunities.
+Data Science often hits a "communication wall" when explaining model thresholds. This app breaks that wall by:
+- **Translating Jargon:** Replaces TP/FP/TN/FN with business-friendly terms like "Wins" and "Surprises."
+- **Interactive Simulation:** Let stakeholders "feel" the trade-off by moving sliders for precision and recall.
+- **Contextual Discussion:** Ideal for "What-If" sessions regarding loan defaults, medical screening, or customer churn.
 
 ### Contribute
 
