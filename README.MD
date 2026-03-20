@@ -1,7 +1,7 @@
 # 📊 Precision-Recall Explorer for Business
 
-[![Shiny App](https://img.shields.io/badge/Launch-App-success?style=flat-square&logo=shiny)](https://tiger-tang.shinyapps.io/MetricsExplorer/)
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![Shiny App](https://img.shields.io/badge/Render-ShinyApp-blue?style=flat-square&logo=r)](https://tiger-tang.shinyapps.io/MetricsExplorer/)
+[![Blog Post](https://img.shields.io/badge/Read-Blog%20Post-orange?style=flat-square)](https://tigertang.org/metric_explorer/)
 
 ## Unveiling the Dynamics of Precision and Recall
 
